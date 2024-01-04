@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarros Ponte - Contato</title>
+    <style>
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #FFC107;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilo do menu de navegação */
+        nav {
+            background-color: #FFEB3B;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Estilo do conteúdo principal */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        main form {
+            border: 1px solid black;
+            width: 500px;
+            padding: 20px;
+        }
+
+        main form h2 {
+            text-align: center;
+        }
+
+        main form div {
+            margin: 10px;
+        }
+
+        main form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        main form input, main form textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        main form input[type="submit"] {
+            background-color: #FFC107;
+            cursor: pointer;
+        }
+
+        main form input[type="submit"]:hover {
+            background-color: #FFEB3B;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #FFC107;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com o título do website -->
+    <header>
+        <h1>Sarros Ponte</h1>
+        <p>Venda e compra de amendoim e ovo de codorna</p>
+    </header>
+
+    <!-- Menu de navegação com links para outras páginas -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal com o formulário de contato -->
+    <main>
+        <form action="enviar.php" method="post">
+            <h2>Entre em contato conosco</h2>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div>
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto da mensagem" required>
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="10" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+    <!-- Rodapé com informações de contato e redes sociais -->
+    <footer>
+        <p>© 2024 Sarros Ponte. Todos os direitos reservados.</p>
+        <p>Whatsapp📱: (81) 98677-1757</p>
+        <p>E-mail: sarrosponte@gmail.com</p>
+        <p>Facebook: sarrosponte</p>
+        <p>Instagram: @sarrosponte</p>
+    </footer>
+</body>
+</html>
